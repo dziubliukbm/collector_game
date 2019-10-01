@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<div class="page_wrp">
+<h1>CrystalsCollector</h1>
+<div class="rules_wrp">
+<p class="rule_text">You will be given a random number at the start of the game</p>
+<p class="rule_text">There are four crystals below. By clicking on a crystal you will 
+add a specific amount of points to your total score</p>
+<p class="rule_text">You win the game by maching your total score to random nambers,
+     you lose the game if your total score goes about the random number.</p>
+<p class="rule_text">The value of each crystal is hidden from you until you click on it.</p>
+<p class="rule_text">Each time when the game starts, the game will change the value of each crystal.</p>
+</div>
+    <div class="scores">
+        <div class="random_number">
+                <span id="random"></span> 
+        </div>
+        <div class="table_wrp">
+            <p>wins: <span id="wins">0</span></p> 
+                <br>  
+            <p>losses: <span id="losses">0</span></p>   
+        </div>
+    </div>
+<div class="crystals_area">
+<button id="blue" class="crystal"><img  src="./assets/images/bluegem.jpg"></button>
+<button id="pink" class="crystal"><img src="./assets/images/pinkgem.jpg" ></button>
+<button id="purple" class="crystal"><img src="./assets/images/purplegem.png" ></button>
+<button id="yellow" class="crystal"><img src="./assets/images/yellowgem.jpg  " ></button>
+</div>
+<p id="score">Your total score is:</p>
+<div id="total_score">0
+</div>
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+
+<script src="assets/javascript/game.js"></script>  
+</body>
+</html>
